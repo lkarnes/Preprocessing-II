@@ -1,1 +1,32 @@
 // Navigation Styles here
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 110%;
+    margin: 22px auto;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed grey;
+    @media @mobile {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-item {
+        width: 40%;
+    }
+    .nav-box{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        @media @mobile {
+            width: 100%;
+        }
+        p {
+            @media @mobile {
+                padding: 0 10px;
+                width:  25%;
+            }
+        }
+    }
+}
